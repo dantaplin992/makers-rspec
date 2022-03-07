@@ -1,8 +1,7 @@
-require 'greet.rb'
+require 'greet'
 
-Rspec.describe "greet" do
+describe 'greet' do
   it "returns given name with greeting" do
-    result = greet("Dan")
-    expect (result).to eq "Hello, Dan!"
+    expect (greet("Dan")).to eq "Hello, Dan!"
   end
 end
